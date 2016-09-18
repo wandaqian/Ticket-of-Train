@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="TextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvyonghu" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBack"
+        android:text="退出"/>
+</LinearLayout>
+
+    <TextView
+
+        android:text="出发地："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="110dp"
+        android:id="@+id/chufadi" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请输入出发地"
+        android:ems="10"
+        android:backgroundTint="@color/colorAccent"
+        android:id="@+id/etchufadi"
+        android:layout_alignBaseline="@+id/chufadi"
+        android:layout_alignBottom="@+id/chufadi"
+        android:layout_toRightOf="@+id/chufadi"
+        android:layout_toEndOf="@+id/chufadi" />
+
+    <TextView
+        android:text="目的地"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etchufadi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/mudidi" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请输入目的地"
+        android:ems="10"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_below="@+id/chufadi"
+        android:layout_toRightOf="@+id/mudidi"
+        android:layout_toEndOf="@+id/mudidi"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:id="@+id/etmudidi" />
+
+    <Button
+        android:text="查询"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="138dp"
+        android:id="@+id/button3"
+        android:layout_below="@+id/etmudidi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="选择日期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etriqi"
+        android:layout_toRightOf="@+id/etriqi"
+        android:layout_toEndOf="@+id/etriqi"
+        android:id="@+id/btnriqi" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请选择日期"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:id="@+id/etriqi"
+        android:layout_below="@+id/mudidi"
+
+        android:layout_alignLeft="@+id/etmudidi"
+        android:layout_alignStart="@+id/etmudidi" />
+
+    <TextView
+        android:text="日期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvriqi"
+        android:layout_alignBaseline="@+id/btnriqi"
+        android:layout_alignBottom="@+id/btnriqi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="查看已购车票"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/btnyigou"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="TextView"
+        android:textSize="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/tvcheci" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <RadioButton
+            android:text="一等座"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rba" />
+        <RadioButton
+            android:text="二等座"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbb" />
+        <RadioButton
+            android:text="商务座"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbc" />
+        </RadioGroup>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnfanhui"
+          android:text="返回"/>
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/btngoumai"
+          android:text="购买"/>
+  </LinearLayout>
+
+</LinearLayout>
